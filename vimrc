@@ -21,6 +21,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'bling/vim-airline'
 " Plugin 'ervandew/supertab'
 " Plugin 'xolox/vim-notes'
+" Plugin 'xolox/vim-misc'
 
 call vundle#end()
 " ==========================================
