@@ -14,7 +14,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Initialize the vundle plugin
 Plugin 'gmarik/Vundle.vim'
+
 " Plugin 'sickill/vim-monokai'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'tomtom/tcomment_vim'
