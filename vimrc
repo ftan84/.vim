@@ -18,7 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'sickill/vim-monokai'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'tomtom/tcomment_vim'
-" Plugin 'bling/vim-ariline'
+" Plugin 'bling/vim-airline'
 " Plugin 'ervandew/supertab'
 
 call vundle#end()
