@@ -20,6 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'tomtom/tcomment_vim'
 " Plugin 'bling/vim-airline'
 " Plugin 'ervandew/supertab'
+" Plugin 'xolox/vim-notes'
 
 call vundle#end()
 " ==========================================
