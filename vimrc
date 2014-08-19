@@ -19,6 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'tomtom/tcomment_vim'
 " Plugin 'bling/vim-ariline'
+" Plugin 'ervandew/supertab'
 
 call vundle#end()
 " ==========================================
