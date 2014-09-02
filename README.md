@@ -10,3 +10,7 @@ My vim settings with vundle
 2. Create symbolic link for vimrc
 
     ```ln -s ~/.vim/vimrc ~/.vimrc```
+
+3. Run Vim and run the command:
+
+    ```:PluginInstall```
