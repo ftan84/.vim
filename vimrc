@@ -17,13 +17,13 @@ call vundle#begin()
 " Initialize the vundle plugin
 Plugin 'gmarik/Vundle.vim'
 
-" Plugin 'sickill/vim-monokai'
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'tomtom/tcomment_vim'
-" Plugin 'bling/vim-airline'
-" Plugin 'ervandew/supertab'
-" Plugin 'xolox/vim-notes'
-" Plugin 'xolox/vim-misc'
+Plugin 'sickill/vim-monokai'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
 
 call vundle#end()
 " ==========================================
