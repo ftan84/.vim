@@ -136,3 +136,6 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Printing options
 set popt=number:y
+
+" Vim-notes options
+:let g:notes_directories = ['~/Box_Sync/Notes/']
