@@ -24,6 +24,7 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
+Plugin 'mrtazz/simplenote'
 
 call vundle#end()
 " ==========================================
@@ -138,4 +139,4 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 set popt=number:y
 
 " Vim-notes options
-:let g:notes_directories = ['~/Box_Sync/Notes/']
+:let g:notes_directories = ['~/Notes/']
