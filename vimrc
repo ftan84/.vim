@@ -24,7 +24,7 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
-Plugin 'mrtazz/simplenote'
+Plugin 'mrtazz/simplenote.vim'
 
 call vundle#end()
 " ==========================================
