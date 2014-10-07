@@ -56,6 +56,9 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+" Fixes weird backspace problems
+set backspace=2
+
 " Wrap settings
 " set wrap
 " set nolist
