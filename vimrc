@@ -142,8 +142,8 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 set popt=number:y
 
 " Vim-notes options
-:let g:notes_directories = ['~/Notes/']
+" :let g:notes_directories = ['~/Notes/']
 
 " Simplenote config
-let g:SimplenoteUsername = "ftan@discoverydn.com"
-let g:SimplenotePassword = "rXHP0C7zHYtj"
+" let g:SimplenoteUsername = "ftan@discoverydn.com"
+" let g:SimplenotePassword = "rXHP0C7zHYtj"
