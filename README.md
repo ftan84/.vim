@@ -17,4 +17,4 @@ My vim settings with vundle
 
 4. Run Vim and run the command:
 
-    ```:PluginInstall```
+    ```\:PluginInstall```
