@@ -139,9 +139,10 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 " Printing options
 set popt=number:y
 
-" Vim-notes options
-" :let g:notes_directories = ['~/Notes/']
-
-" Simplenote config
-" let g:SimplenoteUsername = "ftan@discoverydn.com"
-" let g:SimplenotePassword = "rXHP0C7zHYtj"
+augroup vimrc_autocmds
+    autocmd!
+    " highlight characters past column 120
+    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python match Excess /\%80v.*/
+    autocmd FileType python set nowrap
+    augroup END
