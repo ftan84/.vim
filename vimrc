@@ -1,3 +1,8 @@
+" Skip VIM settings if opening using Vi
+if v:progname == "vi"
+    finish
+enfif
+
 " =====================
 " Reset settings
 " =====================
