@@ -28,11 +28,21 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-misc'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 " ==========================================
 " End Vundle
 " ==========================================
+
+" Set modifiable so vim-fugitive will work
+" set modifiable
+
+" Set the encoding to UTF-8
+set encoding=utf-8
+
+" Set the font to work with powerline symbols
+" set guifont=Inconsolata\ for\ Powerline
 
 " This terminal supports colors
 " set term=rxvt-256color
