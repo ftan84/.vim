@@ -1,5 +1,6 @@
 .vim
 ====
+test
 
 My vim settings with vundle
 
