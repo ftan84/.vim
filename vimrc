@@ -161,7 +161,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>stat :Gstatus<CR>
 
 " Python mode remap
-nnoremap <Leader>lint :PymodeLintAuto<CR>
+" nnoremap <Leader>lint :PymodeLintAuto<CR>
 
 " Printing options
 set popt=number:y
@@ -175,4 +175,4 @@ augroup vimrc_autocmds
     augroup END
 
 " Turn off color column from python mode
-let g:pymode_options_colorcolumn = 0
+" let g:pymode_options_colorcolumn = 0
