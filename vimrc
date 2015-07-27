@@ -31,7 +31,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
 Plugin 'ivanov/vim-ipython'
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 call vundle#end()
 " ==========================================
