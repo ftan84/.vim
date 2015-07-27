@@ -29,6 +29,9 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
+Plugin 'chrisbra/csv.vim'
+Plugin 'ivanov/vim-ipython'
+Plugin 'klen/python-mode'
 
 call vundle#end()
 " ==========================================
@@ -61,30 +64,33 @@ set number
 " Set ruler
 set ruler
 
+" #### Python Setting ####
 " Sets the indent rules
 " set smartindent
-filetype indent plugin on
-set tabstop=4
-set expandtab
-set shiftwidth=4
-set softtabstop=4
+" filetype indent plugin on
+" set tabstop=4
+" set expandtab
+" set shiftwidth=4
+" set softtabstop=4
 
 " Fixes weird backspace problems
-set backspace=2
+" set backspace=2
 
 " Wrap settings
 " set wrap
 " set nolist
-" set textwidth=0
+" set textwidth=79
 " set wrapmargin=0
 " set formatoptions+=t
 
 " Ignore case sensitity
-set smartcase
+" set smartcase
 
 " Highlight & incremental search
-set hlsearch
-set incsearch
+" set hlsearch
+" set incsearch
+
+" #### End Python Settings ####
 
 " Always display status line
 set laststatus=2
@@ -110,8 +116,8 @@ set nobackup
 set noswapfile
 
 " filetype plugin indent on
-autocmd FileType python nmap <F5> :!python %<cr>
-autocmd FileType r nmap <F5> :!Rscript %<cr>
+" autocmd FileType python nmap <F5> :!python %<cr>
+" autocmd FileType r nmap <F5> :!Rscript %<cr>
 
 " Settings for the modules
 source ~/.vim/module_settings
@@ -121,6 +127,9 @@ source ~/.vim/module_settings
 " =============================
 " Set mouse support
 " set mouse=a
+
+" Change the leader key to spacebar
+let mapleader = ","
 
 " Window key mappings
 " Using Ctrl
@@ -132,9 +141,6 @@ nmap <C-l> <C-W>l
 " nnoremap <Leader>j <C-W>j
 " nnoremap <Leader>k <C-W>k
 " nnoremap <Leader>l <C-W>l
-
-" Change the leader key to spacebar
-let mapleader = ","
 
 " Change the save function to leader s
 nnoremap <Leader>s :w<CR>
@@ -151,13 +157,22 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 " Nerdtree Toggle
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 
+" Fugitive settings
+nnoremap <Leader>stat :Gstatus<CR>
+
+" Python mode remap
+nnoremap <Leader>lint :PymodeLintAuto<CR>
+
 " Printing options
 set popt=number:y
 
+" Highlight characters past 80 columns
 augroup vimrc_autocmds
     autocmd!
-    " highlight characters past column 120
     autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
     autocmd FileType python match Excess /\%80v.*/
     autocmd FileType python set nowrap
     augroup END
+
+" Turn off color column from python mode
+let g:pymode_options_colorcolumn = 0
