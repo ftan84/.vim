@@ -30,7 +30,7 @@ Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
-Plugin 'ivanov/vim-ipython'
+Plugin 'ivanov/vim-ipython.git'
 " Plugin 'klen/python-mode'
 
 call vundle#end()
@@ -67,7 +67,7 @@ set ruler
 " #### Python Setting ####
 " Sets the indent rules
 " set smartindent
-" filetype indent plugin on
+filetype indent plugin on
 " set tabstop=4
 " set expandtab
 " set shiftwidth=4
