@@ -23,6 +23,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'sickill/vim-monokai'
+Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'bling/vim-airline'
@@ -31,6 +32,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
 Plugin 'ivanov/vim-ipython.git'
+Plugin 'alfredodeza/pytest.vim'
 " Plugin 'klen/python-mode'
 
 call vundle#end()
@@ -53,7 +55,8 @@ set term=xterm-256color
 
 " Color scheme
 set t_Co=256
-colorscheme monokai
+colorscheme gruvbox 
+set background=dark
 
 " Sets syntax highlighting to on
 syntax on
@@ -68,10 +71,10 @@ set ruler
 " Sets the indent rules
 " set smartindent
 filetype indent plugin on
-" set tabstop=4
-" set expandtab
-" set shiftwidth=4
-" set softtabstop=4
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 " Fixes weird backspace problems
 " set backspace=2
@@ -160,19 +163,27 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 " Fugitive settings
 nnoremap <Leader>stat :Gstatus<CR>
 
+" Pytest mapping
+nnoremap <Leader>ut :Pytest project<CR>
+nnoremap <Leader>utf :Pytest file<CR>
+
 " Python mode remap
 " nnoremap <Leader>lint :PymodeLintAuto<CR>
 
 " Printing options
 set popt=number:y
 
+" Color column at 79
+set colorcolumn=79
+highlight ColorColumn ctermbg=0
+
 " Highlight characters past 80 columns
-augroup vimrc_autocmds
-    autocmd!
-    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-    autocmd FileType python match Excess /\%80v.*/
-    autocmd FileType python set nowrap
-    augroup END
+" augroup vimrc_autocmds
+"     autocmd!
+"     autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+"     autocmd FileType python match Excess /\%80v.*/
+"     autocmd FileType python set nowrap
+"     augroup END
 
 " Turn off color column from python mode
 " let g:pymode_options_colorcolumn = 0
