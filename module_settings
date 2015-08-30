@@ -8,21 +8,21 @@
 " NERDTree module settings
 " ========================
 let g:NERDTreeWinPos = 'right'
-let g:NERDTreeWinSize = 25
+let g:NERDTreeWinSize = 30
 
 
 " =======================
 " Airline module settings
 " =======================
+let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
 
 " unicode symbols
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+" let g:airline_left_sep = ''
+" let g:airline_right_sep = ''
 " let g:airline_left_sep = '▶'
 " let g:airline_right_sep = '◀'
 " let g:airline_symbols.branch = '⎇'
@@ -30,5 +30,6 @@ let g:airline_right_sep = ''
 " let g:airline_symbols.whitespace = 'Ξ'
 
 " This replaces section y from encoding to date and time
-let g:airline_section_y = '%{strftime("%b %d,%Y %H:%m%p")}' 
+" let g:airline_section_y = '%{strftime("%b %d,%Y %H:%m%p")}' 
 
+let g:airline_theme = 'molokai'

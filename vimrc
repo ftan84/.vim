@@ -151,6 +151,11 @@ nnoremap <Leader>s :w<CR>
 " Change the quit function to leader q
 nnoremap <Leader>q :q<CR>
 
+" Use space for folding
+" set foldmethod=indent
+nnoremap <space> za
+vnoremap <space> za
+
 " Trailing whitespaces
 " match ErrorMsg '\s\+$'
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
@@ -162,10 +167,10 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Fugitive settings
 nnoremap <Leader>stat :Gstatus<CR>
+nnoremap <Leader>push :Gpush
 
-" Pytest mapping
-nnoremap <Leader>ut :Pytest project<CR>
-nnoremap <Leader>utf :Pytest file<CR>
+" Run nosetests
+nnoremap <Leader>test :! nosetests -s<CR>
 
 " Python mode remap
 " nnoremap <Leader>lint :PymodeLintAuto<CR>
@@ -187,3 +192,14 @@ highlight ColorColumn ctermbg=0
 
 " Turn off color column from python mode
 " let g:pymode_options_colorcolumn = 0
+
+" Remap tab key to escape
+" nnoremap <Tab> <Esc>
+" vnoremap <Tab> <Esc>gV
+" onoremap <Tab> <Esc>
+" inoremap <Tab> <Esc>`^
+inoremap <Leader><Tab> <Tab>
+
+au VimEnter * map <Tab> <Esc>
+au VimEnter * imap <Tab> <Esc>
+au VimEnter * vmap <Tab> <Esc>
