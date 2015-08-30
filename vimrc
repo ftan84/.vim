@@ -167,7 +167,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Fugitive settings
 nnoremap <Leader>stat :Gstatus<CR>
-nnoremap <Leader>push :Gpush
+nnoremap <Leader>push :Gpush origin
 
 " Run nosetests
 nnoremap <Leader>test :! nosetests -s<CR>
