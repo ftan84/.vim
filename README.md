@@ -26,3 +26,17 @@ ln -s ~/.vim/vimrc ~/.vimrc
 ``` 
 :PluginInstall
 ```
+
+5. Install pip
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+```
+
+6. Install virutalenv and virtualenvwrapper
+
+```
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+```
