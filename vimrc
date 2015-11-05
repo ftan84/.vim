@@ -198,8 +198,8 @@ highlight ColorColumn ctermbg=0
 " vnoremap <Tab> <Esc>gV
 " onoremap <Tab> <Esc>
 " inoremap <Tab> <Esc>`^
-inoremap <Leader><Tab> <Tab>
-
-au VimEnter * map <Tab> <Esc>
-au VimEnter * imap <Tab> <Esc>
-au VimEnter * vmap <Tab> <Esc>
+" inoremap <Leader><Tab> <Tab>
+"
+" au VimEnter * map <Tab> <Esc>
+" au VimEnter * imap <Tab> <Esc>
+" au VimEnter * vmap <Tab> <Esc>
