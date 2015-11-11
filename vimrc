@@ -33,6 +33,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
 Plugin 'ivanov/vim-ipython.git'
 Plugin 'alfredodeza/pytest.vim'
+Plugin 'jpalardy/vim-slime'
 " Plugin 'klen/python-mode'
 
 call vundle#end()
