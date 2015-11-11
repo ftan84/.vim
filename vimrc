@@ -194,13 +194,5 @@ highlight ColorColumn ctermbg=0
 " Turn off color column from python mode
 " let g:pymode_options_colorcolumn = 0
 
-" Remap tab key to escape
-" nnoremap <Tab> <Esc>
-" vnoremap <Tab> <Esc>gV
-" onoremap <Tab> <Esc>
-" inoremap <Tab> <Esc>`^
-" inoremap <Leader><Tab> <Tab>
-"
-" au VimEnter * map <Tab> <Esc>
-" au VimEnter * imap <Tab> <Esc>
-" au VimEnter * vmap <Tab> <Esc>
+" Configuration for vim-slime to work with iPython
+let g:slime_python_ipython = 1
