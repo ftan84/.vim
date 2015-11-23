@@ -27,7 +27,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
 " Plugin 'chrisbra/csv.vim'
@@ -79,6 +79,9 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+
+" Omni complete support
+set omnifunc=syntaxcomplete#Complete
 
 " Fixes weird backspace problems
 " set backspace=2
