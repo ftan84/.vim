@@ -126,7 +126,7 @@ source ~/.vim/module_settings
 set popt=number:y
 
 " Color column at 79
-set colorcolumn=79
+set colorcolumn=80
 highlight ColorColumn ctermbg=0
 
 " =============================
