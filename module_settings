@@ -33,3 +33,10 @@ let g:airline_symbols.space = "\ua0"
 " let g:airline_section_y = '%{strftime("%b %d,%Y %H:%m%p")}' 
 
 let g:airline_theme = 'molokai'
+
+" ========================
+" Vim slime settings
+" ========================
+" Configuration for vim-slime to work with iPython
+let g:slime_target = "tmux"
+let g:slime_python_ipython = 1

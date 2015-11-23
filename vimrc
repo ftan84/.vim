@@ -30,9 +30,9 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
-Plugin 'chrisbra/csv.vim'
-Plugin 'ivanov/vim-ipython.git'
-Plugin 'alfredodeza/pytest.vim'
+" Plugin 'chrisbra/csv.vim'
+" Plugin 'ivanov/vim-ipython.git'
+" Plugin 'alfredodeza/pytest.vim'
 Plugin 'jpalardy/vim-slime'
 " Plugin 'klen/python-mode'
 
@@ -48,7 +48,7 @@ set modifiable
 set encoding=utf-8
 
 " Set the font to work with powerline symbols
-" set guifont=Inconsolata\ for\ Powerline
+set guifont=Inconsolata\ for\ Powerline
 
 " This terminal supports colors
 " set term=rxvt-256color
@@ -56,7 +56,7 @@ set term=xterm-256color
 
 " Color scheme
 set t_Co=256
-colorscheme gruvbox 
+colorscheme gruvbox " Use theme 'gruvbox'
 set background=dark
 
 " Sets syntax highlighting to on
@@ -106,12 +106,6 @@ set laststatus=2
 set history=200
 set undolevels=200
 
-" Custom status line
-" set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]
-" set stl+=\ Col:\ %c
-" set stl+=\ Buf:\ #%n\ [%b][0x%B]
-" set stl+=\ %=%{strftime(\"%m/%d/%Y\ %I:%M\ %p\")}
-
 " Operator time out
 set timeoutlen=500
 
@@ -122,22 +116,22 @@ set showcmd
 set nobackup
 set noswapfile
 
-" filetype plugin indent on
-" autocmd FileType python nmap <F5> :!python %<cr>
-" autocmd FileType r nmap <F5> :!Rscript %<cr>
+" Set to use mouse
+set mouse=a
 
 " Settings for the modules
 source ~/.vim/module_settings
 
-" Set to use mouse
-set mouse=a
+" Printing options
+set popt=number:y
+
+" Color column at 79
+set colorcolumn=79
+highlight ColorColumn ctermbg=0
 
 " =============================
 " Custom mappings
 " =============================
-" Set mouse support
-" set mouse=a
-
 " Change the leader key to spacebar
 let mapleader = ","
 
@@ -147,10 +141,6 @@ nmap <C-h> <C-W>h
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-l> <C-W>l
-" nnoremap <Leader>h <C-W>h
-" nnoremap <Leader>j <C-W>j
-" nnoremap <Leader>k <C-W>k
-" nnoremap <Leader>l <C-W>l
 
 " Change the save function to leader s
 nnoremap <Leader>s :w<CR>
@@ -169,6 +159,9 @@ nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
+" =============================
+" Custom mappings for plugins
+" =============================
 " Nerdtree Toggle
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 
@@ -181,25 +174,3 @@ nnoremap <Leader>test :! nosetests -s<CR>
 
 " Python mode remap
 " nnoremap <Leader>lint :PymodeLintAuto<CR>
-
-" Printing options
-set popt=number:y
-
-" Color column at 79
-set colorcolumn=79
-highlight ColorColumn ctermbg=0
-
-" Highlight characters past 80 columns
-" augroup vimrc_autocmds
-"     autocmd!
-"     autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-"     autocmd FileType python match Excess /\%80v.*/
-"     autocmd FileType python set nowrap
-"     augroup END
-
-" Turn off color column from python mode
-" let g:pymode_options_colorcolumn = 0
-
-" Configuration for vim-slime to work with iPython
-let g:slime_target = "tmux"
-let g:slime_python_ipython = 1
