@@ -42,7 +42,7 @@ call vundle#end()
 " ==========================================
 
 " Set modifiable so vim-fugitive will work
-" set modifiable
+set modifiable
 
 " Set the encoding to UTF-8
 set encoding=utf-8
@@ -61,6 +61,9 @@ set background=dark
 
 " Sets syntax highlighting to on
 syntax on
+
+" Sets search highlight on
+set hlsearch
 
 " Sets line numbers to on
 set number
@@ -125,6 +128,9 @@ set noswapfile
 
 " Settings for the modules
 source ~/.vim/module_settings
+
+" Set to use mouse
+set mouse=a
 
 " =============================
 " Custom mappings
@@ -195,4 +201,5 @@ highlight ColorColumn ctermbg=0
 " let g:pymode_options_colorcolumn = 0
 
 " Configuration for vim-slime to work with iPython
+let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
