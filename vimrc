@@ -176,5 +176,8 @@ nnoremap <Leader>push :Gpush origin
 " Run nosetests
 nnoremap <Leader>test :! nosetests -s<CR>
 
+" Syntastic mappings
+nnoremap <Leader>lint :SyntasticCheck<CR> :Errors<CR>
+
 " Python mode remap
 " nnoremap <Leader>lint :PymodeLintAuto<CR>

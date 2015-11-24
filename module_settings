@@ -3,13 +3,11 @@
 " Add pathogen functionality
 " execute pathogen#infect()
 
-
 " ========================
 " NERDTree module settings
 " ========================
 let g:NERDTreeWinPos = 'right'
 let g:NERDTreeWinSize = 30
-
 
 " =======================
 " Airline module settings
@@ -40,3 +38,15 @@ let g:airline_theme = 'molokai'
 " Configuration for vim-slime to work with iPython
 let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
+
+" ==================
+" Syntastic settings
+" ==================
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
