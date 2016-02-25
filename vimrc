@@ -32,6 +32,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jpalardy/vim-slime'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'chrisbra/csv.vim'
 " Plugin 'ivanov/vim-ipython.git'
 " Plugin 'alfredodeza/pytest.vim'
@@ -48,8 +49,16 @@ set modifiable
 " Set the encoding to UTF-8
 set encoding=utf-8
 
+" Shared clipboard
+set clipboard=unnamedplus
+
 " Set the font to work with powerline symbols
-set guifont=Inconsolata\ for\ Powerline
+set guifont=Inconsolata\ for\ Powerline\ 12
+
+" Startup options for gui vim
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
 
 " This terminal supports colors
 " set term=rxvt-256color

@@ -6,7 +6,7 @@
 " ========================
 " NERDTree module settings
 " ========================
-let g:NERDTreeWinPos = 'right'
+let g:NERDTreeWinPos = 'left'
 let g:NERDTreeWinSize = 30
 
 " =======================
