@@ -1,5 +1,6 @@
 .vim
 ====
+THIS REPO IS NO LONGER SUPPORTED. PLEASE SEE ftan84/dotfiles
 
 My vim settings with vundle
 
